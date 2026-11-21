@@ -1,0 +1,52 @@
+# ── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.pytest_cache/
+
+# ── Virtual environment ──────────────────────────────────────────
+backend/venv/
+venv/
+.venv/
+env/
+
+# ── Secrets & config ─────────────────────────────────────────────
+backend/.env
+.env
+*.env
+
+# ── Trained model files (large binaries) ─────────────────────────
+backend/models/*.h5
+backend/models/*.joblib
+# Keep the models/ folder itself (via .gitkeep)
+
+# ── Database & uploaded files ────────────────────────────────────
+backend/storage/
+# eval images (local test only)
+backend/eval_images/
+
+# ── Frontend ─────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+
+# ── ChromaDB (large binary index) ────────────────────────────────
+backend/tomato_rag/chroma_db/
+
+# ── Soil cache (auto-regenerated) ────────────────────────────────
+backend/soil_suitability_complete/soil_suitability/soil_cache.json
+backend/soil_suitability_complete/soil_suitability/__pycache__/
+
+# ── OS / editor ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace

@@ -1,0 +1,4 @@
+Place your trained model files here:
+  - best_tomato_model.h5         (EfficientNet-B0 leaf disease classifier)
+  - xgb_suitability.joblib       (XGBoost soil suitability model)
+  - feature_order.joblib         (feature names in training order)
